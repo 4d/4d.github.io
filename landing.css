@@ -108,6 +108,14 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .round-small{border-radius:2px}.round,.round-medium{border-radius:4px}.round-large{border-radius:8px}.round-xlarge{border-radius:16px}.round-xxlarge{border-radius:32px}
 .row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.fifth,.row-padding>.col{padding:0 8px}
 .container,.panel{padding:0.01em 16px}.panel{margin-top:16px;margin-bottom:16px}
+
+/* Five card row support */
+.five-row,.six-row{display:flex;flex-wrap:wrap;margin-left:-8px;margin-right:-8px}
+.five-row>.fifth{float:none;width:20%;max-width:20%;padding-left:8px;padding-right:8px;box-sizing:border-box}
+.six-row>.fifth{float:none;width:16.66667%;max-width:16.66667%;padding-left:8px;padding-right:8px;box-sizing:border-box}
+@media (max-width:992px){.five-row>.fifth,.six-row>.fifth{width:50%;max-width:50%}}
+@media (max-width:600px){.five-row>.fifth,.six-row>.fifth{width:100%;max-width:100%}}
+
 .code,.codespan{font-family:Consolas,"courier new";font-size:16px}
 .code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
