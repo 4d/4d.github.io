@@ -239,3 +239,32 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .border-dark-grey,.hover-border-dark-grey:hover,.border-dark-gray,.hover-border-dark-gray:hover{border-color:#616161!important}
 .border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+/* Clickable data-href elements */
+[data-href]{cursor:pointer}
+
+/* Header */
+.header-left{margin-top:20px;margin-left:15px}
+.header-logo{margin-right:16px}
+
+/* Main cards */
+.card-main{min-height:350px;margin-bottom:15px}
+.card-doc{background:linear-gradient(#f5778f, #6e3ba2)}
+.card-learn{background:linear-gradient(#8ccbf0, #269de3)}
+.card-corner{background:linear-gradient(#8AE297, #59A662)}
+.card-blog{background:linear-gradient(#ffb592, #ea5c5a)}
+.card-icon{font-size:120px}
+.card-img{margin-right:16px}
+
+/* Six-row section */
+.six-row-section{margin-bottom:20px;color:#8c8c8c}
+.link-section{font-size:12px}
+.section-icon{font-size:60px;margin-top:20px}
+.section-icon-img{width:60px;height:auto;margin-top:20px}
+
+/* Footer */
+.footer-section{font-size:14px}
+.footer-links{color:#a6a7a9}
+.no-underline{text-decoration:none}
+.back-to-top{position:relative;bottom:55px}
+.powered-by-link{text-decoration:none;color:#a6a7a9}
