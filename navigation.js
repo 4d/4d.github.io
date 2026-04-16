@@ -17,10 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     }
     try {
-      var parsed = new URL(url, location.origin);
-      return allowedOrigins.some(function (origin) {
-        return parsed.origin === origin || parsed.origin === new URL(origin).origin;
-      });
+      var parsedOrigin = new URL(url, location.origin).origin;
+      return allowedOrigins.indexOf(parsedOrigin) !== -1;
     } catch (e) {
       return false;
     }
@@ -53,12 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Enter" || event.key === " ") {
-      var target = event.target.closest("[data-href]");
-      if (target) {
-        event.preventDefault();
-        navigateTo(target);
-      }
+    if (event.key !== "Enter") {
+      return;
+    }
+    var target = event.target.closest("[data-href]");
+    if (target) {
+      event.preventDefault();
+      navigateTo(target);
     }
   });
 });
