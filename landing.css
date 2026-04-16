@@ -253,13 +253,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .card-learn{background:linear-gradient(#8ccbf0, #269de3)}
 .card-corner{background:linear-gradient(#8AE297, #59A662)}
 .card-blog{background:linear-gradient(#ffb592, #ea5c5a)}
-.card-icon{font-size:120px}
+.card-icon{font-size:120px!important}
 .card-img{margin-right:16px}
 
 /* Six-row section */
 .six-row-section{margin-bottom:20px;color:#8c8c8c}
 .link-section{font-size:12px}
-.section-icon{font-size:60px;margin-top:20px}
+.section-icon{font-size:60px!important;margin-top:20px}
 .section-icon-img{width:60px;height:auto;margin-top:20px}
 
 /* Footer */
